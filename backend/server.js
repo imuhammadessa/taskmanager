@@ -6,7 +6,7 @@ const connectDB = require('./config/db');
 // Import Routes
 const auth = require('./routes/auth.route');
 const user = require('./routes/user.route');
-// const tasks = require('./routes/tasks.route');
+const tasks = require('./routes/task.route');
 // const report = require('./routes/report.route');
 
 const app = express();
@@ -32,7 +32,7 @@ app.use(express.json());
 
 app.use('/api/auth', auth);
 app.use('/api/users', user);
-// app.use('/api/tasks', tasks.routes);
+app.use('/api/tasks', tasks);
 // app.use('/api/report', report.routes);
 
 // Start Server
