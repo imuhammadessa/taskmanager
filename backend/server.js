@@ -33,7 +33,7 @@ app.use(express.json());
 app.use('/api/auth', auth);
 app.use('/api/users', user);
 app.use('/api/tasks', tasks);
-app.use('/api/report', report.routes);
+app.use('/api/report', report);
 
 // Start Server
 const PORT = process.env.PORT || 5000;
