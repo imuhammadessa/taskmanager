@@ -1,32 +1,43 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
 # Logs
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Nodemon
+.nodemon
 
-# Cache
-.cache
-
-# Config
-.env
-.env.*.local
-
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS generated files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# IDE / Editor files
+.vscode/
+.idea/
+
+# Temporary files
+tmp/
+temp/
+
+# Build files
+dist/
+build/
+
+# Coverage reports
+coverage/
+
+# Uploaded files (optional, if using multer uploads folder)
+uploads/
+
+# Excel generated files (optional)
+*.xlsx
+
+# Package lock files (optional - keep if working in a team)
+# package-lock.json
